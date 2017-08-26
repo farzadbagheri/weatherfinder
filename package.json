@@ -12,8 +12,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build&&gh-pages -d build"
-
+    "deploy": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://farzadbagheri.github.io/weatherfinder"
+  "homepage": "https://farzadbagheri.github.io/weatherfinder",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
 }
