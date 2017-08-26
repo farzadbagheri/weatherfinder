@@ -1,0 +1,182 @@
+body {
+    padding: 0px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background: #fafafa;
+}
+.top{ 
+    background-color:#ffffff;
+    color:#525d6a;
+    height:185px;
+    margin-top:0%;
+    border-radius: 20px;
+}
+
+
+h2{
+   position:relative;
+   top:10px;
+text-align:left;
+   margin-left: 20px;
+   margin-top: 0%;
+    
+}
+
+h3{
+    position: relative;
+    top: 400px
+}
+.App{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0%;
+}
+
+.toggle {
+	position: relative;
+    display: block; 
+    top:-53px;
+    left:65px;
+	width: 65px;
+	height: 30px;
+	padding: 3px;
+	margin: 0 5px 5px 0;
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	cursor: pointer;
+	
+}
+.toggle-in {
+	position: absolute;
+	top: 0;
+	left:0;
+	opacity: 0;
+	
+}
+.toggle-label {
+	position: relative;
+	display: block;
+    width:65px;
+    height: 30px;
+	font-size: 10px;
+	background: #FFB500;
+	border-radius: 18px;
+	
+}
+.toggle-label:before, .toggle-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	box-sizing:content-box;
+}
+.toggle-label:before {
+	content: "F °";
+	right: -4px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.toggle-label:after {
+	content: "C °";
+	left: 7px;
+	color: #FFFFFF;
+    font-size: 15px;
+}
+.toggle-in:checked ~ .toggle-label {
+	background: #FFB500;
+	
+}
+
+.toggle-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+}
+.toggle-handle:before {
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+}
+.toggle-in:checked ~ .toggle-handle {
+	left: 39px;
+}
+ 
+.toggle-label, .toggle-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+.container {
+    width: 600px;
+    margin: auto;
+    padding: -2px;
+    color: black;
+    text-align: center;
+  }
+  .container .button {
+    border: 0;
+    padding: 9px;
+    margin: 12px;
+    width: 15%;
+    height: 42px;
+    font-size: 15px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    outline: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+  }
+  
+.button {
+    position: relative;
+    background-color: #519fff;
+    box-shadow: 0px 3px 0px 0px #3D77BE;
+    
+  }
+  
+.button:hover {
+     background-color: #5589C9;
+     cursor: pointer;
+}
+
+input{
+    position:relative;
+    padding: 9px;
+    font-size:15px;
+}
+
+.city-profile{
+    text-align:center;
+    background-color: #FFFFFF; 
+    border-radius: 10px;
+    border: 3px solid #6D6B6B;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.city {
+    text-align: left;
+    padding-top: 7px;
+    padding-left:6px;
+}
+
+.test {
+    width: 90px;
+    height:90px;
+}
+
+.temp{
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+}
