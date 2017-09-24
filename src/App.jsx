@@ -70,7 +70,7 @@ class App extends Component {
                                 }
                             }
                         } 
-                        placeholder='Enter a 5-Digit ZIP code'/>
+                        placeholder='5-Digit ZIP code'/>
                         <button 
                             onClick={() => this.search()}                             
                             className="button">Go</button>
