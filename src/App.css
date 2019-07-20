@@ -180,3 +180,23 @@ input{
     text-align: left;
     padding-left: 20px;
 }
+
+@media only screen 
+and (min-device-width : 375px) {
+    input {
+    border-style: dashed;
+    border-color: rgb(247,247,247);
+}
+.toggle {
+    top: 15px;
+    float: left;
+    left: 6px;
+}
+.container {
+    width: 100%;
+
+}
+.city-profile {
+    width: 100%;
+}
+}
