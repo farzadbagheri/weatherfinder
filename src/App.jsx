@@ -63,19 +63,7 @@ class App extends Component {
                 <div className="top">
                     <h2>Weather Finder</h2>
                     <div className="container">
-                        <input value={this.state.query} 
-                        onChange={event=>{this.setState({query: event.target.value})}} 
-                        onKeyPress={event =>{
-                                if(event.key === 'Enter'){
-                                    this.search();
-                                }
-                            }
-                        } 
-                        placeholder='5-Digit ZIP code'/>
-                        <button 
-                            onClick={() => this.search()}                             
-                            className="button">Go</button>
-                        <label className="toggle">
+                    <label className="toggle">
                             <input onClick={()=>{
                                 if(this.state.temp_type === "imperial") {
                                     this.setState({temp_type: "metric"}, () => { 
@@ -97,6 +85,19 @@ class App extends Component {
                                 <span className="toggle-label"></span> 
                                 <span className="toggle-handle"></span> 
                         </label>
+                        <input value={this.state.query} 
+                        onChange={event=>{this.setState({query: event.target.value})}} 
+                        onKeyPress={event =>{
+                                if(event.key === 'Enter'){
+                                    this.search();
+                                }
+                            }
+                        } 
+                        placeholder='5-Digit ZIP code'/>
+                        <button 
+                            onClick={() => this.search()}                             
+                            className="button">Go</button>
+                        
                     </div> 
                 </div>
                 {
