@@ -183,7 +183,8 @@ input{
     input {
     border-style: dashed;
     border-color: rgb(247,247,247);
-    width: 25%;
+    width: 34%;
+    font-size: 12px;
 }
 .toggle {
     top: 15px;
